@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cool Blog Base Template</title>
+</head>
+<body>
+    <p>
+        <a href="{% url 'cool_blog:index' %}">Cool Blog</a> -
+        <a href="{% url 'cool_blog:topics' %}">Topics</a>
+    </p>
+
+    {% block content %}{% endblock content %}
+</body>
+</html>

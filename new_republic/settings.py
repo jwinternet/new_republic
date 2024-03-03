@@ -19,11 +19,11 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # My apps.
+    'cool_blog',
 
     # Third party apps.
 
     # Default Django apps.
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -20,6 +20,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # My apps.
     'cool_blog',
+    'accounts',
 
     # Third party apps.
 
@@ -111,3 +112,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# My settings.
+LOGIN_REDIRECT_URL = 'cool_blog:index'
+LOGOUT_REDIRECT_URL = 'cool_blog:index'
+LOGIN_URL = 'accounts:login'
